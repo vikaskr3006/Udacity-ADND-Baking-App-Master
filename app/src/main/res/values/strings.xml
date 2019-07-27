@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Baking App</string>
+
+    <string name="ALL_RECIPES">All_Recipes</string>
+    <string name="SELECTED_RECIPES">Selected_Recipes</string>
+    <string name="SELECTED_STEPS">Selected_Steps</string>
+    <string name="SELECTED_INDEX">Selected_Index</string>
+    <string name="STACK_RECIPE_DETAIL">STACK_RECIPE_DETAIL</string>
+    <string name="STACK_RECIPE_STEP_DETAIL">STACK_RECIPE_STEP_DETAIL</string>
+    <string name="RECIPE_NAME">Recipe_Name</string>
+
+    <string name="first_step_msg">You already are in the First step of the recipe</string>
+    <string name="last_step_msg">You already are in the Last step of the recipe</string>
+    <string name="widget_success_msg">Recipe ingredients added to widget.</string>
+
+    <string name="tag_sw600dp_port_recipe_step_detail">sw600dp-port-recipe_step_detail</string>
+    <string name="tag_sw600dp_land_recipe_step_detail">sw600dp-land-recipe_step_detail</string>
+    <string name="tag_tablet_land">tablet-land</string>
+    <string name="tag_phone_land">phone-land</string>
+
+    <string name="prev_step_button_text">PREV STEP</string>
+    <string name="next_step_button_text">NEXT STEP</string>
+
+    <string name="widget_button_text">ADD INGREDIENTS TO WIDGET</string>
+    <string name="FROM_ACTIVITY_INGREDIENTS_LIST">FROM_ACTIVITY_INGREDIENTS_LIST</string>
+    <string name="appwidget_text">RECIPE INGREDIENTS WILL APPEAR HERE AFTER ADDING IT THROUGH &quot;BAKING APP&quot;</string>
+
+</resources>

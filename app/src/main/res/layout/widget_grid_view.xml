@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/widget_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:columnWidth="@dimen/widget_grid_view_width"
+        android:layout_margin="@dimen/widget_grid_view_margin"
+        android:horizontalSpacing="@dimen/widget_grid_view_spacing"
+        android:verticalSpacing="@dimen/widget_grid_view_spacing"
+        android:background="@android:color/white"/>
+
+</FrameLayout>

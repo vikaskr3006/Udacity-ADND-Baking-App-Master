@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/exo_player_height_port"
+            android:id="@+id/exo_player_view"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/step_detail_iv"
+            android:layout_gravity="left"
+            android:paddingRight="15dp"
+            android:elevation="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recipe_step_detail_text"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorPrimary"
+            tools:text="Step no and description of the step will appear here"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/previousStep"
+                android:padding="4dp"
+                android:elevation="6dp"
+                android:layout_margin="10dp"
+                android:backgroundTintMode="src_over"
+                android:background="@drawable/my_button"
+                android:textColor="@android:color/white"
+                android:text="@string/prev_step_button_text"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextStep"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:backgroundTintMode="src_over"
+                android:background="@drawable/my_button"
+                android:textColor="@android:color/white"
+                android:text="@string/next_step_button_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

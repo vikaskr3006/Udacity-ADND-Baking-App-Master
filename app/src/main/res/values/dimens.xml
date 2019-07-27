@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tab_container_width">250dp</dimen>
+    <dimen name="tab_container_2_margin">25dp</dimen>
+    <dimen name="tab_container_2_padding">25dp</dimen>
+    <dimen name="card_iv_height">200dp</dimen>
+    <dimen name="fragment_food_item_padding">16dp</dimen>
+    <dimen name="fragment_recipe_detail_ll_padding">8dp</dimen>
+    <dimen name="widget_button_text_size">15dp</dimen>
+    <dimen name="widget_button_margin">32dp</dimen>
+    <dimen name="exo_player_height_port">300dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="widget_grid_view_width">25dp</dimen>
+    <dimen name="widget_grid_view_margin">2dp</dimen>
+    <dimen name="widget_grid_view_spacing">2dp</dimen>
+    <dimen name="widget_grid_view_item_text_size">16sp</dimen>
+    <dimen name="widget_grid_view_item_margin">1dp</dimen>
+
+</resources>

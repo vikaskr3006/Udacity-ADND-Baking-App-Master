@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/fragment_recipe_detail_ll_padding">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset"
+        style="@android:style/Widget.Holo.ScrollView"
+        android:clipToPadding="false"
+        android:scrollIndicators="top|bottom"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:isScrollContainer="false"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/title_ingredients"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="Ingredients"/>
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/title_ingredients" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ingredients_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_view"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/step_detail_title_tv"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="Steps (tap for more details)"
+                android:layout_below="@id/ingredients_rv" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recipe_steps_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_detail_title_tv" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_to_widget_button"
+                android:text="@string/widget_button_text"
+                android:background="@drawable/my_button"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/widget_button_text_size"
+                android:layout_margin="@dimen/widget_button_margin"
+                android:layout_below="@id/recipe_steps_rv" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+

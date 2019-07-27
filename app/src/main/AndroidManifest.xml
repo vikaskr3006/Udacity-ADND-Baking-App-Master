@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.udacity.vikaskumar.bakingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".ui.FoodItemActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.RecipeDetailActivity" />
+
+        <service android:name="com.example.udacity.vikaskumar.bakingapp.widget.UpdateBakingService" />
+        <service android:name="com.example.udacity.vikaskumar.bakingapp.widget.GridWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name="com.example.udacity.vikaskumar.bakingapp.widget.BakingWidgetProvider" android:icon="@drawable/ic_art_track_black_36dp">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE2" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/baking_widget_info" />
+        </receiver>
+
+    </application>
+
+</manifest>
